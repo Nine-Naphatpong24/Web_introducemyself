@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+        }
+
+        .left, .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .left {
+            background-color: #ffffff;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 20px;
+            position: relative; /* เพิ่ม position relative สำหรับการจัดการซ้อน */
+        }
+
+        .right {
+            background-color: #330033;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #555599;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #7777bb;
+        }
+
+        /* สไตล์รูปภาพ */
+        .profile-img {
+            max-width: 700px; /* ขนาดชัดเจน */
+            height: auto; /* ปรับให้สูงอัตโนมัติ */
+            border-radius: 10px;
+            margin-top: 20px; /* เว้นระยะจากปุ่ม */
+            margin-left: 160px;
+        }
+        
+
+        .profile {
+            width: 200px; /* กำหนดความกว้าง */
+            height: 200px; /* กำหนดความสูงให้เท่ากัน */
+            border-radius: 50%; /* ทำให้เป็นวงกลม */
+            position: absolute; /* ใช้ position absolute */
+            top: 340px; /* ปรับระยะให้ย้ายขึ้น */
+            left: 410px; /* ปรับตำแหน่งซ้าย */
+            z-index: 1; /* ทำให้วงกลมอยู่เหนือภาพ */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="nav-buttons">
+            <button onclick="location.href='#home'">Home</button>
+            <button onclick="location.href='#portfolio'">Portfolio</button>
+        </div>
+        
+        <!-- รูปภาพอยู่ใต้ปุ่ม -->
+        <img src="https://zixzax.net/wp-content/uploads/2019/12/%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%8B%E0%B8%95%E0%B9%8C-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-HTML.png" alt="Profile Picture" class="profile-img">
+        <img src="https://media.discordapp.net/attachments/862566966946430996/1251505570880688278/IMG_2252.jpg?ex=672b5963&is=672a07e3&hm=2e000d2bc4bf447029e637848e47a47a84d5303fdc6fb116c8f0cac744ef2f61&=&format=webp&width=503&height=671" alt="Profile" class="profile">
+        
+    </div>
+    <div class="right">
+        Right Side
+    </div>
+</body>
+</html>
